@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scrollbar-color: rgb(230, 230, 230);
+}
+body{
+    height: 400vh;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(230, 230, 230);
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(63, 132, 119);
+    border-radius: 20px;
+}
