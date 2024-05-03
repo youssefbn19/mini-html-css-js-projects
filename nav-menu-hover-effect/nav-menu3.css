@@ -1,0 +1,42 @@
+.nav-menu3 ul{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu3 ul li a{
+    padding: 1em 2em;
+    font-weight: 500;
+    color: rgb(188, 108, 37);
+    font-size: 18px;
+    position: relative;
+}
+.nav-menu3 a::before,
+.nav-menu3 a::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgb(188, 108, 37);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.nav-menu3 a::before{
+    right: 12px;
+    top:12px;
+    border-width: 2px 2px 0px 0px;
+}
+.nav-menu3 a::after{
+    left: 12px;
+    bottom:12px;
+    border-width: 0px 0px 2px 2px;
+}
+.nav-menu3 a:hover::before{
+    right: 0px;
+    top:0px;
+    opacity: 1;
+}
+.nav-menu3 a:hover::after{
+    left: 0px;
+    bottom:0px;
+    opacity: 1;
+}
