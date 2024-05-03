@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    background-color: rgb(4, 15, 16);
+}
+a{
+    text-decoration: none;
+    color: rgb(190, 234, 238);
+    padding: 1rem 3rem;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
