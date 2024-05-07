@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+#accordion{
+    max-width: 570px;
+}
+#accordion li{
+    list-style: none;
+    background-color: #fff;
+    margin: 20px 0px;
+}
+#accordion label {
+    display: block;
+    padding: 20px 20px 12px 20px;
+    border: 1px solid #D3D3D3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+}
+#accordion label img{
+    width: 14px;
+    transition: transform 0.5s;
+}
+#accordion input[type="radio"]{
+    display: none;
+}
+#accordion .content{
+    overflow: hidden;
+    max-height: 8px;
+    transition: max-height 0.5s;
+    border: 1px solid #D3D3D3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+}
+#accordion .content p{
+    padding: 20px;
+}
+ #accordion input[type="radio"]:checked + .content{
+    max-height: 500px;
+    border: 1px solid #D3D3D3;
+}
+#accordion label:has(+ input[type="radio"]:checked) img{
+    transform: rotate(180deg);
+}
